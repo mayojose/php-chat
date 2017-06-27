@@ -1,4 +1,4 @@
-php-chat
+anders/php-chat
 ============
 
 [![Build Status](https://secure.travis-ci.org/pmill/php-chat.svg?branch=master)](http://travis-ci.org/pmill/php-chat) [![Code Climate](https://codeclimate.com/github/pmill/php-chat/badges/gpa.svg)](https://codeclimate.com/github/pmill/php-chat) [![Test Coverage](https://codeclimate.com/github/pmill/php-chat/badges/coverage.svg)](https://codeclimate.com/github/pmill/php-chat/coverage) [![Test Coverage](https://scrutinizer-ci.com/g/pmill/php-chat/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pmill/php-chat/)
@@ -29,7 +29,7 @@ curl -sS https://getcomposer.org/installer | php
 Next, run the Composer command to install the latest version of php-chat:
 
 ```bash
-composer.phar require pmill/php-chat
+composer.phar require anders/php-chat
 ```
 
 After installing, you need to require Composer's autoloader:
