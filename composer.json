@@ -1,9 +1,9 @@
 {
-    "name":             "pmill/php-chat",
+    "name":             "anders/php-chat",
     "description":      " A multi-user multi-room ratchet server ",
     "keywords":         ["php", "web socket", "ratchet", "chat"],
     "homepage":         "https://github.com/pmill/php-chat",
-    "time":             "2015-07-08",
+    "time":             "2017-03-19",
     "license":          "MIT",
     "authors": [
         {
