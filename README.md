@@ -1,7 +1,7 @@
 anders/php-chat
 ============
 
-[![Build Status](https://secure.travis-ci.org/pmill/php-chat.svg?branch=master)](http://travis-ci.org/pmill/php-chat) [![Code Climate](https://codeclimate.com/github/pmill/php-chat/badges/gpa.svg)](https://codeclimate.com/github/pmill/php-chat) [![Test Coverage](https://codeclimate.com/github/pmill/php-chat/badges/coverage.svg)](https://codeclimate.com/github/pmill/php-chat/coverage) [![Test Coverage](https://scrutinizer-ci.com/g/pmill/php-chat/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pmill/php-chat/)
+[![Build Status](https://travis-ci.org/oskonnikov/php-chat.svg?branch=master)](http://travis-ci.org/oskonnikov/php-chat) 
 
 Introduction
 ------------
@@ -54,6 +54,11 @@ A prettier React and Semantic UI client interface is located at [pmill/react-cha
 
 Version History
 ---------------
+
+
+0.2.1 (27/07/2017)
+
+*   Added Avatar variables and functions
 
 0.2.0 (09/07/2015)
 
