@@ -100,7 +100,7 @@ abstract class AbstractMultiRoomServer implements MessageComponentInterface
      * @param $name
      * @return ConnectedClientInterface
      */
-    abstract protected function createClient(ConnectionInterface $conn, $name);
+    abstract protected function createClient(ConnectionInterface $conn, $name, $avatar);
 
     public function __construct()
     {
@@ -150,7 +150,9 @@ abstract class AbstractMultiRoomServer implements MessageComponentInterface
         switch ($msg['action']) {
             case self::ACTION_USER_CONNECTED:
                 $roomId = $this->makeRoom($msg['roomId']);
-                $client = $this->createClient($conn, $msg['userName']);
+                $client = $this->createClient($conn, $msg['userName'],$msg['userAvatar']);
+                $userName = $msg['userName'];
+                $userAvatar = $msg['userAvatar'];
                 $this->connectUserToRoom($client, $roomId);
                 $this->sendUserConnectedMessage($client, $roomId);
                 $this->sendUserWelcomeMessage($client, $roomId);
@@ -371,6 +373,7 @@ abstract class AbstractMultiRoomServer implements MessageComponentInterface
         foreach ($this->findRoomClients($roomId) AS $roomClient) {
             $clients[] = array(
                 'name'=>$roomClient->getName(),
+                'avatar'=>$roomClient->getAvatar(),
             );
         }
 
