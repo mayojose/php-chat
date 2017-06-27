@@ -21,6 +21,7 @@ class ConnectedClient implements ConnectedClientInterface
      * @var string
      */
     protected $name;
+    protected $avatar;
 
     /**
      * @return mixed
@@ -62,12 +63,27 @@ class ConnectedClient implements ConnectedClientInterface
         return $this->name;
     }
 
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+
     /**
      * @param string $name
      */
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+
+    /**
+     * @param string $avatar
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
     }
 
     /**
@@ -77,6 +93,7 @@ class ConnectedClient implements ConnectedClientInterface
     {
         return array(
             'name'=>$this->name,
+            'avatar'=>$this->avatar,
         );
     }
 
